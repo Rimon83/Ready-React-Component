@@ -1,0 +1,46 @@
+.text_container{
+ background: #000;
+ padding: 1.3rem;
+ color: #fff;
+ display: flex;
+ gap: 2rem;
+ flex-direction: column;
+ width: 100%;
+ max-width: 100%;
+}
+
+.text_change .text_word{
+ font-size: 1.5rem;
+ font-weight: 600;
+ color: rgb(9, 251, 251);
+ margin-left: 1rem;
+ position: absolute;
+ display: flex;
+ opacity: 0;
+ letter-spacing: 1px;
+
+}
+
+.text_change h3{
+ display: inline-flex;
+ margin: 0;
+ vertical-align: top;
+ font-size: 1.5rem;
+}
+
+.text_change h3 .text_word .letter_out{
+ transform: rotateX(90deg);
+ transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+
+
+
+.text_change h3 .text_word .letter_in{
+ transition: 0.38s ease;
+}
+
+.text_change h3 .text_word .letter_behind{
+ transform: rotateX(-90deg);
+
+}

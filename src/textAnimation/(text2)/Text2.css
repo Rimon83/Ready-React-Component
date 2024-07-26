@@ -1,0 +1,39 @@
+.text2_container{
+ width:100%;
+
+}
+
+.header-info{
+ display: flex;
+ flex-direction: column;
+ gap:2em;
+ width:100%;
+ margin-top: 1rem;
+ background-color: #000;
+ color: #fff;
+ padding: .8rem;
+}
+
+.change-text{
+ font-size: 1.5rem;
+ font-weight: 500;
+}
+
+.change-text h3{
+ display: inline-flex;
+ vertical-align: top;
+ margin: 0;
+}
+
+.text {
+ margin-left: 10px;
+ color: #eeae89;
+ letter-spacing: 1px;
+}
+
+@media screen and (max-width: 667px) {
+ .change-text{
+   font-size: .9rem;
+
+ }
+}

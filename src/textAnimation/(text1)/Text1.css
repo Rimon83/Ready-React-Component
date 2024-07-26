@@ -1,0 +1,63 @@
+
+.text1-container{
+ background-color:black;
+ padding: 20px; 
+ color: white;
+ display: flex;
+ gap: 2rem;
+ flex-direction: column;
+ width: 100%;
+ max-width: 100%;
+}
+
+.text-change-text .text-word{
+ font-size: 1.5rem;
+ font-weight: 600;
+ color:rgb(215, 251, 9);
+ margin-left: 1rem;
+ position: absolute;
+ display: flex;
+ opacity: 0;
+ letter-spacing: 1px;
+}
+.text-change-text h3{
+ display: inline-flex;
+ margin: 0;
+ vertical-align: top;
+ font-size: 1.5rem;
+}
+
+
+
+.text-change-text h3 .text-word .letter{
+ transform-origin: center center 25px;
+}
+
+.text-change-text h3 .text-word .letter.out{
+ transform: rotateX(90deg);
+ transition: 0.32s cubic-bezier(0.6,0,0.7,0.2);
+}
+.letter.out{
+transform: rotateX(90deg);
+transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+
+}
+
+.text-change-text h3 .text-word .letter.in{
+transition: 0.38s ease
+}
+
+.text-change-text h3 .text-word .letter.behind{
+transform: rotateX(-90deg);
+}
+
+@media screen and (max-width: 667px) {
+ .text-change-text .text-word {
+   font-size: .9rem;
+
+ }
+ .text-change-text h3 {
+   font-size: .9rem;
+
+ }
+}
