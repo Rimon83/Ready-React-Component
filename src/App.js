@@ -3,6 +3,7 @@ import "./App.css";
 import MainText from "./textAnimation";
 import HomePage from "./headers";
 import CardPage from "./card";
+import FormPage from "./forms";
 
 function Layout() {
   const {pathname} = useLocation()
@@ -28,7 +29,13 @@ function Layout() {
           className={`link ${pathname === "/card" ? "active" : ""}`}
           to="/card"
         >
-          Card
+          Cards
+        </Link>
+        <Link
+          className={`link ${pathname === "/form" ? "active" : ""}`}
+          to="/form"
+        >
+          Forms
         </Link>
       </nav>
       <main>
@@ -37,6 +44,7 @@ function Layout() {
           <Route path="/headers" element={<HomePage />} />
           <Route path="/textAnimation" element={<MainText />} />
           <Route path="/card" element={<CardPage />} />
+          <Route path="/form" element={<FormPage />} />
         </Routes>
       </main>
     </section>
