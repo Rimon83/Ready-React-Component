@@ -1,6 +1,6 @@
 #header {
   height: 100vh;
-  width:100%;
+  width: 100%;
   padding: 150px 0;
   background-image: url("/public/images/sea.png");
   background-repeat: no-repeat;
@@ -10,24 +10,42 @@
   font-size: 2rem;
   position: relative;
   overflow: hidden;
+  position: relative;
 }
 
-
-#header h1{
- font-size: 3rem;
- margin-bottom: 1rem;
- background: linear-gradient(#00ff62, #ff0051);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+#header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(#b0ccba, #eb99b3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-#header .subtitle{
- display: flex;
- flex-direction: column;
- gap: .7em;
- margin-top: 1em;
+#header .subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  z-index: 2;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 #header .subtitle h3 {
@@ -35,12 +53,11 @@
   font-size: 1.5rem;
 }
 
-#header .subtitle em{
- color:#ff0000;
- font-size: 1.5rem;
- letter-spacing: 1px;
- line-height: 1.5;
-
+#header .subtitle em {
+  color: #e6e04b;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }
 
 nav {
@@ -50,14 +67,14 @@ nav {
   padding: 2rem;
   text-align: left;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   font-size: 1.2rem;
+  z-index: 2;
 }
 
 nav a {
   text-decoration: none;
-  color: #713e3e;
-
+  color: #e6e04b;
 }
 nav a:hover {
   opacity: 0.5;

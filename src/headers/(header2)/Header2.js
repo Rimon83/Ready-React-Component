@@ -12,6 +12,7 @@ const Header2 = () => {
     <>
       <h1 className="subheading">Header 2</h1>
       <section id="header">
+        <div c></div>
         <nav>
           <a href="#header">Home</a>
           <a href="#about">About</a>
@@ -19,9 +20,11 @@ const Header2 = () => {
           <a href="#skill">Skills</a>
           <a href="#contact">Contact</a>
         </nav>
-        <h1>Rimon Yousuf</h1>
         <div className="subtitle">
-          <h3>I am</h3> <em id="animate"> web developer</em>
+          <div className="text-overlay">
+            <h1>Rimon Yousuf</h1>
+            <h3>I am</h3> <em id="animate"> web developer</em>
+          </div>
         </div>
       </section>
     </>
