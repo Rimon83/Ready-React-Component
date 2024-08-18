@@ -12,8 +12,6 @@ html, body {
 }
 
 
-
-
 .section__nav{
   display: flex;
   gap: 1rem;
@@ -22,6 +20,8 @@ html, body {
   font-size: 1.2rem;
   overflow-y: auto;
   width: 100%;
+  position: relative;
+  margin-left: 3rem
 
 }
 

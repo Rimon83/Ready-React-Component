@@ -4,6 +4,7 @@ import MainText from "./textAnimation";
 import HomePage from "./headers";
 import CardPage from "./card";
 import FormPage from "./forms";
+import SliderPage from "./images-gallery";
 
 function Layout() {
   const {pathname} = useLocation()
@@ -37,6 +38,12 @@ function Layout() {
         >
           Forms
         </Link>
+        <Link
+          className={`link ${pathname === "/slider" ? "active" : ""}`}
+          to="/slider"
+        >
+          Image Slider
+        </Link>
       </nav>
       <main>
         <Routes>
@@ -45,6 +52,7 @@ function Layout() {
           <Route path="/textAnimation" element={<MainText />} />
           <Route path="/card" element={<CardPage />} />
           <Route path="/form" element={<FormPage />} />
+          <Route path="/slider" element={<SliderPage />}/>
         </Routes>
       </main>
     </section>
