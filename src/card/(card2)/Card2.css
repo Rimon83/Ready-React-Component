@@ -1,0 +1,131 @@
+.card2_container {
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  background-color: antiquewhite;
+  background-image: radial-gradient(whitesmoke, lightgreen);
+  display: flex;
+  flex-direction: column;
+}
+
+.card2_header {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: rgb(191, 154, 225);
+}
+
+.card2_header h1 {
+  padding: 20px;
+}
+
+.card2_header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 2px solid;
+}
+
+.card2_header nav a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  color: black;
+  text-align: center;
+}
+.card2_header nav a:hover,
+a:focus {
+  opacity: 0.5;
+}
+
+.card2 {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  /* flex-direction: column; */
+
+  gap: 50px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.card_info {
+  scroll-margin-top: 2rem;
+  width: min(100%, 400px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.card_info figure {
+  display: flex;
+  flex-direction: column;
+}
+.card_info figcaption {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin: 1rem;
+}
+.card_info img {
+  border: 5px double;
+  border-radius: 50%;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* small 576px*/
+@media screen and (min-width: 375px) {
+  .card2 {
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  .card_info {
+    width: min(100%, 450px);
+  }
+  .card_info:last-child {
+    order: -1;
+  }
+}
+
+/* medium 768px */
+@media screen and (min-width: 768px) {
+  .card2_header nav {
+    display: none;
+  }
+  .card_info {
+    width: min(100%, 325px);
+  }
+}
+/* XL 1200px */
+@media screen and (min-width: 1200px) {
+  .card_info {
+    width: min(100%, 300px);
+  }
+}
+
+@media screen and (max-height: 425px) and (min-aspect-ratio: 5/4) {
+  .card2_header nav {
+    display: none;
+  }
+  .card2 {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+  .card_info figure {
+    flex-flow: column-reverse;
+  }
+}
+.card_info:target {
+  border: 5px solid rgb(91, 91, 223);
+}
+.card_info figcaption::first-letter {
+  font-size: 2rem;
+}

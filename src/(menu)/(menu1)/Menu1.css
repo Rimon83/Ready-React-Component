@@ -1,0 +1,38 @@
+.menu1_section {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.menu1_nav {
+  line-height: 5rem;
+  font-size: 1.5rem;
+  border: 2px solid;
+  max-width: 400px;
+  margin: 20px auto 20px;
+  border-radius: 20px;
+}
+
+.menu1_nav h1 {
+  background-color: rgb(220, 243, 14);
+  border-radius: 20px 20px 0 0;
+}
+
+.menu1_nav ul {
+  list-style-type: none;
+}
+.menu1_nav ul li {
+  border-top: 1px solid;
+}
+.menu1_nav ul li:last-child a {
+  border-radius: 0 0 20px 20px;
+}
+
+.menu1_nav ul li a {
+  text-decoration: none;
+  background-color: #ea6645;
+  display: block;
+  color: black;
+}
+.menu1_nav ul li a:hover {
+  opacity: 0.7;
+}

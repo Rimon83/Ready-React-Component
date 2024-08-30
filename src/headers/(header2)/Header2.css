@@ -1,4 +1,4 @@
-#header {
+.header2 {
   height: 100vh;
   width: 100%;
   padding: 150px 0;
@@ -13,7 +13,7 @@
   position: relative;
 }
 
-#header h1 {
+.header2 h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   background: linear-gradient(#b0ccba, #eb99b3);
@@ -22,7 +22,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-#header .subtitle {
+.header2_subtitle {
   display: flex;
   flex-direction: column;
   gap: 0.7em;
@@ -35,7 +35,7 @@
   z-index: 1;
 }
 
-.text-overlay {
+.header2_text_overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,19 +48,19 @@
   border-radius: 5px;
 }
 
-#header .subtitle h3 {
+.header2_subtitle h3 {
   line-height: 1.5;
   font-size: 1.5rem;
 }
 
-#header .subtitle em {
+.header2_subtitle em {
   color: #e6e04b;
   font-size: 1.5rem;
   letter-spacing: 1px;
   line-height: 1.5;
 }
 
-nav {
+.header2_nav {
   position: absolute;
   top: 0;
   right: 3rem;
@@ -72,11 +72,11 @@ nav {
   z-index: 2;
 }
 
-nav a {
+.header2_nav a {
   text-decoration: none;
   color: #e6e04b;
 }
-nav a:hover {
+.header2_nav a:hover {
   opacity: 0.5;
   transform: scaleX(1.2);
   transition: all 2s;

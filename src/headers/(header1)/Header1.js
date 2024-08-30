@@ -5,42 +5,42 @@ const Header1 = () => {
   return (
     <>
       <h1 className="subheading">Header 1</h1>
-      <header className="header">
-        <div className="logo-container">
-          <a href="/" className="logo-link">
+      <header className="header1">
+        <div className="header1_logo_container">
+          <a href="/" className="header1_logo_link">
             <h3>Logo</h3>
           </a>
         </div>
 
-        <ul className="nav">
+        <ul className="header1_nav">
           <li>
-            <a href="#" className="nav-link">
+            <a href="#" className="header1_nav_link">
               Home
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link">
+            <a href="#" className="header1_nav_link">
               Features
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link">
+            <a href="#" className="header1_nav_link">
               Pricing
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link">
+            <a href="#" className="header1_nav_link">
               Contact
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link">
+            <a href="#" className="header1_nav_link">
               About
             </a>
           </li>
         </ul>
 
-        <div className="auth-buttons">
+        <div className="header1_auth_buttons">
           <button type="button" className="btn btn-outline-primary">
             Login
           </button>

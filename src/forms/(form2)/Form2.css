@@ -1,0 +1,139 @@
+.form2_container {
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.form2 {
+  width: 600px;
+  max-width: 100%;
+  margin: 100px auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 10px;
+  background-color: beige;
+  padding: 0.8rem;
+}
+
+
+
+.format {
+  margin-bottom: 1rem;
+  color: rgba(85, 85, 222, 0.49);
+  display: none;
+}
+
+.invalid {
+  color: red;
+}
+.block {
+  display: block;
+}
+
+#textArea,
+#reset {
+  margin: 0.4em;
+  padding: 0.5em;
+}
+
+.displayMessage {
+  width: 300px;
+  margin: auto;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  border-radius: 5px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+  background-color: #a2ef9f;
+  z-index: 1000;
+}
+
+.showMessage {
+  transform: translateX(-50%) translateY(5%);
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease, padding-top 0.3s ease,
+    padding-bottom 0.3s ease;
+}
+.input-container .placeholder {
+  position: absolute;
+  left: 10px;
+  top: 45%;
+  padding: 0 5px;
+  color: #aaa;
+  font-size: 16px;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input:hover {
+  box-shadow: 0 5px 5px #000;
+}
+
+.input-container input::placeholder {
+  color: #aaa;
+  font-size: 16px;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+  transform-origin: left;
+}
+
+.input-container input:focus {
+  border-color: #007bff;
+  padding-top: 1.2rem;
+  padding-bottom: 6px;
+}
+
+.input-container input:focus::placeholder {
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+
+
+
+/* .input-container input:not(:placeholder-shown) {
+  padding-top: 1.2rem;
+  padding-bottom: 6px;
+} */
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.hoverable {
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.btn.hoverable:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

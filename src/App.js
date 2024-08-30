@@ -5,6 +5,7 @@ import HomePage from "./headers";
 import CardPage from "./card";
 import FormPage from "./forms";
 import SliderPage from "./images-gallery";
+import MenuPage from "./(menu)";
 
 function Layout() {
   const {pathname} = useLocation()
@@ -44,6 +45,12 @@ function Layout() {
         >
           Image Slider
         </Link>
+        <Link
+          className={`link ${pathname === "/menu" ? "active" : ""}`}
+          to="/menu"
+        >
+          Menu
+        </Link>
       </nav>
       <main>
         <Routes>
@@ -53,6 +60,7 @@ function Layout() {
           <Route path="/card" element={<CardPage />} />
           <Route path="/form" element={<FormPage />} />
           <Route path="/slider" element={<SliderPage />}/>
+          <Route path="/menu" element={<MenuPage />}/>
         </Routes>
       </main>
     </section>
