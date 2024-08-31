@@ -201,7 +201,7 @@ const Form2 = () => {
           <div>
             <input
               type="submit"
-              className={`btn ${
+              className={`form2_btn ${
                 firstNameCheck &&
                 lastNameCheck &&
                 phoneCheck &&

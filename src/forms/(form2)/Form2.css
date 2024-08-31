@@ -118,7 +118,7 @@
   padding-bottom: 6px;
 } */
 
-.btn {
+.form2_btn {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: none;
@@ -128,12 +128,12 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn.hoverable {
+.form2_btn.hoverable {
   background-color: #007bff;
   cursor: pointer;
 }
 
-.btn.hoverable:hover {
+.form2_btn.hoverable:hover {
   background-color: #0056b3;
   transform: scale(1.05);
 }
