@@ -1,0 +1,51 @@
+[
+  {
+    "id": "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+    "image": "images/card3/athletic-cotton-socks-6-pairs.jpg",
+    "name": "Black and Gray Athletic Cotton Socks - 6 Pairs",
+    "rating": {
+      "count": 45
+    },
+    "priceCents": 1090
+  },
+  {
+    "id": "15b6fc6f-327a-4ec4-896f-486349e85a3d",
+    "image": "images/card3/intermediate-composite-basketball.jpg",
+    "name": "Intermediate Size Basketball",
+    "rating": {
+      "count": 75
+    },
+    "priceCents": 2095
+  },
+  {
+    "id": "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
+    "image": "images/card3/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+    "name": "Adults Plain Cotton T-Shirt - 2 Pack",
+    "rating": {
+      "count": 56
+    },
+    "priceCents": 799
+  },
+
+  {
+    "id": "54e0eccd-8f36-462b-b68a-8182611d9add",
+    "image": "images/card3/black-2-slot-toaster.jpg",
+    "name": "2 Slot Toaster - Black",
+    "rating": {
+      "count": 2197
+    },
+    "priceCents": 1899
+    
+  },
+  {
+    "id": "3ebe75dc-64d2-4137-8860-1f5a963e534b",
+    "image": "images/card3/6-piece-white-dinner-plate-set.jpg",
+    "name": "6 Piece White Dinner Plate Set",
+    "rating": {
+      "count": 37
+    },
+    "priceCents": 2067
+  }
+]
+ 
+ 
